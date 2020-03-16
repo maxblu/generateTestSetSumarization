@@ -15,10 +15,14 @@ order = []
 
 for i,j in zip(range(len(sentences)),sentences):
     j
-    number = st.sidebar.number_input(value=0,label='Sentence# '+str(i) ,min_value=-1,max_value=len(example_news))
-    if number == -1 :
+    # number = st.sidebar.number_input(value=0,label='Sentence# '+str(i) ,min_value=-1,max_value=len(example_news))
+    number = st.sidebar.checkbox("Sentence# "+str(i))
+    # if number == -1 :
+        # continue
+    if not number:
         continue
-    order.append((number,j))
+    # order.append((number,j))
+    order.append((i,j))
 
 
 # st.write(len(sentences))
