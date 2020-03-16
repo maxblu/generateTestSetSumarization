@@ -30,11 +30,12 @@ for i,j in zip(range(len(sentences)),sentences):
 order.sort(key= lambda order : order[0] )
 
 
-with open("summary"+str(index)+".json" ,'w',encoding='utf-8') as fd:
-    json.dump(order,fd)
+if st.button("Save"):
+    with open("summary"+str(index)+".json" ,'w',encoding='utf-8') as fd:
+        json.dump(order,fd)
 
 # with open("summary "+str(index)+".json",'r',encoding='utf-8') as fd:
 #     order = json.load(fd)
 
-order
+# order
 
