@@ -12,3 +12,8 @@ GRACIASSSSS.
 pip install Requeriments.txt
 
 streamlit run  tagSentences.py
+
+
+### PD:
+Si da un error con nltk. Abrir una consola de python importar nltk y luego ejecutar la funcion:
+'nltk.download('punkt')'
