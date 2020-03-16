@@ -14,7 +14,7 @@ sentences =  nltk.tokenize.sent_tokenize(text,language='spanish')
 order = []
 
 for i,j in zip(range(len(sentences)),sentences):
-    j
+    str(i)+" : " +j
     # number = st.sidebar.number_input(value=0,label='Sentence# '+str(i) ,min_value=-1,max_value=len(example_news))
     number = st.sidebar.checkbox("Sentence# "+str(i))
     # if number == -1 :
