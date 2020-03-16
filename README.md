@@ -17,3 +17,5 @@ streamlit run  tagSentences.py
 ### PD:
 Si da un error con nltk. Abrir una consola de python importar nltk y luego ejecutar la funcion:
 'nltk.download('punkt')'
+
+NO HACE FALTA EL NLTK DATA NO OS PREOCUPEIS. SOLO SI ACASO EL 'punkt'
