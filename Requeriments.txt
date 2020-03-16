@@ -1,3 +1,2 @@
 streamlit
-json
 nltk
